@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.yamlee"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="11"
+        android:targetSdkVersion="15" />
+	<uses-permission android:name="android.permission.INTERNET"/>
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.yamlee.component.activity.TransferDataActivity"
+            android:label="Android高薪/组件/Activity/Activity之间传递数据" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="com.yamlee.ANDROID_PROJECTS_CODE" />
+            </intent-filter>
+        </activity>
+         <activity
+            android:name="com.yamlee.net.SecureActivity"
+            android:label="Android高薪/网络与加密/加密算法（AES，MD5，HMAC，SHA）" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="com.yamlee.ANDROID_PROJECTS_CODE" />
+            </intent-filter>
+        </activity>
+        
+        <activity android:name="com.yamlee.component.activity.TransferDataActivityB" >
+        </activity>
+        
+        
+        <activity android:name="com.yamlee.MainListActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,22 @@
+/**
+	 * 通过Intent在Activity之间传递数据，过调用Intent的putExtrafangfa
+	 */
+	public void trasferDataByIntent(){
+			String inputTextString = inputEt.getText().toString();
+			Intent intet = new Intent();
+			intet.setClass(TransferDataActivity.this, TransferDataActivityB.class);
+			intet.setFlags(TransferDataActivityB.TRANSFER_DATA_INTENT);
+			intet.putExtra("key",inputTextString);
+			startActivity(intet);
+		
+	}
+	
+	@SuppressWarnings("deprecation")
+	public void transferDataByClicpBoard(){
+			ClipboardManager clipboardManager = (ClipboardManager) getSystemService(Context.CLIPBOARD_SERVICE);
+			clipboardManager.setText(inputEt.getText().toString());
+	}
+
+	public void transferDataByStatic(){
+		staticTextString = inputEt.getText().toString();
+	}

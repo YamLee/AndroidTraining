@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">YamLeeAndroidProjects</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="btn_baseactivity_show_code">代码展示</string>
+    <string name="btn_baseactivity_show_funtion">功能演示</string>
+
+</resources>
