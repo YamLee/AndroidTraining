@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
-	<PreferenceCategory android:title="我的设置" >
-	    <CheckBoxPreference android:key="wifi_open"
-	        android:title="wifi开关"
-	        android:summary="打开wifi，使用无线网络"/>
-	</PreferenceCategory>
-</PreferenceScreen>
