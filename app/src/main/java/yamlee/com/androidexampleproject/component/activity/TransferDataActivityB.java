@@ -20,6 +20,7 @@ public class TransferDataActivityB extends Activity{
 		// TODO Auto-generated method stub
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_transferdata_b);
+		setResult(Activity.RESULT_OK);
 		TextView getTextView = (TextView) findViewById(R.id.tv_transferdata_b);
 		if (getIntent().getFlags() == TRANSFER_DATA_INTENT) {
 			getTextView.setText("ͨ��intent��ʽ������ݣ�"+getStrFromIntent());

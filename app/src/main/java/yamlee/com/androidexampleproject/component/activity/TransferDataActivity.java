@@ -5,6 +5,7 @@ import android.content.ClipboardManager;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -34,8 +35,13 @@ public class TransferDataActivity extends BaseActivity {
 		setShowFunctionFragment(new TransferDataFunctionFragment());
 		setShowCodeFragment(new TransferDataCodeFragment());
 	}
-	
-	
+
+	@Override
+	protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+		super.onActivityResult(requestCode, resultCode, data);
+		Log.i("lee", "activity onactivityResult--" + "requestcode----" + requestCode + "  resultcode--" + resultCode);
+	}
+
 	@SuppressLint("ValidFragment")
     public  class TransferDataFunctionFragment extends BaseShowFunctionFragment{
 		@Override
@@ -50,6 +56,12 @@ public class TransferDataActivity extends BaseActivity {
 			clipboardBtn.setOnClickListener(new myListener());
 			inputEt = (EditText) view.findViewById(R.id.tv_transferdata_a_input);
 			return view;
+		}
+
+		@Override
+		public void onActivityResult(int requestCode, int resultCode, Intent data) {
+			Log.i("lee", "fragment onactivityresult---" + "requestcode:" + requestCode + "  resultcode---" + resultCode);
+			super.onActivityResult(requestCode, resultCode, data);
 		}
 	}
 	
@@ -77,17 +89,19 @@ public class TransferDataActivity extends BaseActivity {
 				transferDataByClicpBoard();
 				Intent intent = new Intent(TransferDataActivity.this, TransferDataActivityB.class);
 				intent.setFlags(TransferDataActivityB.TRANSFER_DATA_CLIP_BOARD);
-				startActivity(intent);
+//				startActivity(intent);
+				startActivityForResult(intent,1111);
 			}
 			if (v.getId() == R.id.btn_transferdata_a_intent) {
 				trasferDataByIntent();
+
 			}
 			if (v.getId() == R.id.btn_transferdata_a_staticfield) {
 				trasferDataByIntent();
 				Intent intent = new Intent(TransferDataActivity.this, TransferDataActivityB.class);
 				intent.setFlags(TransferDataActivityB.TRANSFER_DATA_STATIC_FIELD);
-				startActivity(intent);
-				
+//				startActivity(intent);
+				startActivityForResult(intent,1111);
 			}
 			
 		}

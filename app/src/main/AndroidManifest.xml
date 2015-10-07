@@ -5,7 +5,14 @@
     <uses-sdk
         android:minSdkVersion="11"
         android:targetSdkVersion="15" />
+
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission
+        android:name="android.permission.READ_EXTERNAL_STORAGE"
+        android:maxSdkVersion="18" />
+
     <application
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
@@ -29,15 +36,41 @@
                 <category android:name="com.yamlee.ANDROID_PROJECTS_CODE" />
             </intent-filter>
         </activity>
-
-        <activity android:name=".component.activity.TransferDataActivityB"></activity>
-
-
+        <activity android:name=".component.activity.TransferDataActivityB" />
         <activity android:name=".MainListActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".component.service.ServiceActivity"
+            android:label="Android高薪/组件/Service">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="com.yamlee.ANDROID_PROJECTS_CODE" />
+            </intent-filter>
+        </activity>
+
+        <service
+            android:name=".component.service.DemoService"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="yamlee.com.androidexampleproject.component.service.DEMO_SERVICE" />
+            </intent-filter>
+        </service>
+
+
+        <activity
+            android:name=".tts.TextToSpeechActivity"
+            android:label="Android高薪/tts/语音合成">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="com.yamlee.ANDROID_PROJECTS_CODE" />
             </intent-filter>
         </activity>
     </application>
