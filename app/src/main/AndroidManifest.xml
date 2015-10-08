@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="yamlee.com.androidexampleproject">
+    package="yamlee.com.androidexampleproject" >
 
     <uses-sdk
         android:minSdkVersion="11"
@@ -17,10 +17,10 @@
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
-        android:theme="@style/AppTheme">
+        android:theme="@style/AppTheme" >
         <activity
             android:name=".component.activity.TransferDataActivity"
-            android:label="Android高薪/组件/Activity/Activity之间传递数据">
+            android:label="@string/title_activity_transfer_data_in_activity" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -29,7 +29,7 @@
         </activity>
         <activity
             android:name=".net.SecureActivity"
-            android:label="Android高薪/网络与加密/加密算法（AES，MD5，HMAC，SHA）">
+            android:label="@string/title_activity_secure" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -37,7 +37,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".component.activity.TransferDataActivityB" />
-        <activity android:name=".MainListActivity">
+        <activity android:name=".MainListActivity" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -46,7 +46,7 @@
         </activity>
         <activity
             android:name=".component.service.ServiceActivity"
-            android:label="Android高薪/组件/Service">
+            android:label="@string/title_activity_component_service" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -57,16 +57,24 @@
         <service
             android:name=".component.service.DemoService"
             android:enabled="true"
-            android:exported="true">
+            android:exported="true" >
             <intent-filter>
                 <action android:name="yamlee.com.androidexampleproject.component.service.DEMO_SERVICE" />
             </intent-filter>
         </service>
 
-
         <activity
             android:name=".tts.TextToSpeechActivity"
-            android:label="Android高薪/tts/语音合成">
+            android:label="@string/tite_activity_text_to_speech" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="com.yamlee.ANDROID_PROJECTS_CODE" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".net.retrofit.RetrofitActivity"
+            android:label="@string/title_activity_retrofit" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

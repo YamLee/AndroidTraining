@@ -7,6 +7,12 @@
     <string name="btn_baseactivity_show_code">代码展示</string>
     <string name="btn_baseactivity_show_funtion">功能演示</string>
     <string name="title_activity_service">ServiceActivity</string>
+    <string name="title_root">Android Demo</string>
     <string name="title_activity_text_to_speech">TextToSpeechActivity</string>
+    <string name="tite_activity_text_to_speech">Android Demo/tts/语音合成</string>
+    <string name="title_activity_component_service">Android Demo/组件/Service</string>
+    <string name="title_activity_transfer_data_in_activity">Android Demo/组件/Activity/Activity之间传递数据</string>
+    <string name="title_activity_secure">Android Demo/加密/加密算法（AES，MD5，HMAC，SHA）</string>
+    <string name="title_activity_retrofit">Android Demo/net/Retrofit使用</string>
 
 </resources>
