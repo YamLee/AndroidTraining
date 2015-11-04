@@ -1,0 +1,9 @@
+<matchers>
+
+    <!-- Hamcrest library -->
+    <factory class="org.hamcrest.core.Is"/>
+
+    <!-- Custom extension -->
+    <factory class="me.yamlee.demo.test.custom.NotTextEmpty"/>
+
+</matchers>

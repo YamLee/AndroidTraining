@@ -81,6 +81,9 @@
                 <category android:name="com.yamlee.ANDROID_PROJECTS_CODE" />
             </intent-filter>
         </activity>
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="fb855d227d3fe5d73c1b57853eec82a5f03193f6" />
     </application>
 
 </manifest>
