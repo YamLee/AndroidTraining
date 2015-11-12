@@ -1,4 +1,4 @@
-package yamlee.com.androidexampleproject.component.activity;
+package me.yamlee.demo.component.activity;
 
 
 import android.app.Activity;
@@ -8,7 +8,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.widget.TextView;
 
-import yamlee.com.androidexampleproject.R;
+import yamlee.com.demo.R;
 
 public class TransferDataActivityB extends Activity{
 	public static final int TRANSFER_DATA_INTENT = 0;

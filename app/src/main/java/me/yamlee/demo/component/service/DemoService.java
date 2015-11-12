@@ -1,4 +1,4 @@
-package yamlee.com.androidexampleproject.component.service;
+package me.yamlee.demo.component.service;
 
 import android.app.Service;
 import android.content.Intent;
@@ -13,7 +13,7 @@ import android.widget.Toast;
 
 import java.util.Random;
 
-import yamlee.com.androidexampleproject.IMyAidlInterface;
+import me.yamlee.demo.IMyAidlInterface;
 
 import static android.widget.Toast.LENGTH_SHORT;
 
@@ -23,7 +23,7 @@ import static android.widget.Toast.LENGTH_SHORT;
  */
 public class DemoService extends Service {
 
-    private static final String TAG ="service_demo";
+    private static final String TAG = "service_demo";
     public static final String BINDER_COMMUNICATE_WAY_KEY = "binder_communicate_way";
     public static final int BINDER_COMMUNICATE_WAY_VALUE = 1;
     public static final String MESSENGER_COMMUNICATE_WAY_KEY = "messenger_communicate_way";
@@ -39,43 +39,43 @@ public class DemoService extends Service {
 
         @Override
         public int caculateMultipy(int a, int b) throws RemoteException {
-            return a*b;
+            return a * b;
         }
     };
 
-    static class MyBider extends Binder{
+    static class MyBider extends Binder {
         private DemoService service;
 
         MyBider(DemoService service) {
             this.service = service;
         }
 
-        public DemoService getService(){
+        public DemoService getService() {
             return service;
         }
     }
 
-    private Handler mHander = new Handler(){
+    private Handler mHander = new Handler() {
         @Override
         public void handleMessage(Message msg) {
             super.handleMessage(msg);
-            switch (msg.what){
+            switch (msg.what) {
                 case MSG_WHAT_SAY_HELLO:
-                    Toast.makeText(DemoService.this,"service say Hello!", LENGTH_SHORT).show();
+                    Toast.makeText(DemoService.this, "service say Hello!", LENGTH_SHORT).show();
                     break;
                 default:
                     break;
 
             }
         }
-    } ;
+    };
 
     private final Messenger messenger = new Messenger(mHander);
 
     @Override
     public void onCreate() {
         super.onCreate();
-        Log.i(TAG,"DemoService oncreate");
+        Log.i(TAG, "DemoService oncreate");
     }
 
     @Override
@@ -101,11 +101,11 @@ public class DemoService extends Service {
 
     @Override
     public IBinder onBind(Intent intent) {
-        if(intent.getIntExtra(BINDER_COMMUNICATE_WAY_KEY,0)== BINDER_COMMUNICATE_WAY_VALUE){
+        if (intent.getIntExtra(BINDER_COMMUNICATE_WAY_KEY, 0) == BINDER_COMMUNICATE_WAY_VALUE) {
             mBinder = new MyBider(this);
             return mBinder;
         }
-        if(intent.getIntExtra(MESSENGER_COMMUNICATE_WAY_KEY,0)== MESSENGER_COMMUNICATE_WAY_VALUE){
+        if (intent.getIntExtra(MESSENGER_COMMUNICATE_WAY_KEY, 0) == MESSENGER_COMMUNICATE_WAY_VALUE) {
 
             return messenger.getBinder();
         }
@@ -113,7 +113,7 @@ public class DemoService extends Service {
         return null;
     }
 
-    public int getRandomNum(){
+    public int getRandomNum() {
         return new Random().nextInt();
     }
 }

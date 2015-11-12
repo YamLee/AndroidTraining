@@ -1,9 +1,11 @@
-package yamlee.com.androidexampleproject;
+package me.yamlee.demo;
 
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+
+import yamlee.com.demo.R;
 
 
 public class MainActivity extends ActionBarActivity {

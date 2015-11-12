@@ -1,4 +1,4 @@
-package yamlee.com.androidexampleproject.eventdispatch;
+package me.yamlee.demo.eventdispatch;
 
 import android.app.Activity;
 import android.content.Context;

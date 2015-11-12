@@ -1,4 +1,4 @@
-package yamlee.com.androidexampleproject.component.service;
+package me.yamlee.demo.component.service;
 
 import android.app.Activity;
 import android.content.ComponentName;
@@ -12,7 +12,7 @@ import android.os.RemoteException;
 import android.util.Log;
 import android.view.View;
 
-import yamlee.com.androidexampleproject.R;
+import yamlee.com.demo.R;
 
 public class ServiceActivity extends Activity {
 

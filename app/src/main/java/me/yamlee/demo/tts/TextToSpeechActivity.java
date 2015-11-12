@@ -1,4 +1,4 @@
-package yamlee.com.androidexampleproject.tts;
+package me.yamlee.demo.tts;
 
 import android.app.Activity;
 import android.os.Environment;
@@ -13,7 +13,7 @@ import android.widget.Toast;
 import java.util.HashMap;
 import java.util.Locale;
 
-import yamlee.com.androidexampleproject.R;
+import yamlee.com.demo.R;
 
 public class TextToSpeechActivity extends Activity {
     TextToSpeech mTextToSpeech;

@@ -1,4 +1,4 @@
-package yamlee.com.androidexampleproject.component.activity;
+package me.yamlee.demo.component.activity;
 
 import android.os.Bundle;
 import android.preference.PreferenceActivity;

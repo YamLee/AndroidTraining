@@ -1,4 +1,4 @@
-package yamlee.com.androidexampleproject.net.retrofit.entity;
+package me.yamlee.demo.net.retrofit.entity;
 
 /**
  * Created by yamlee on 15/10/8.

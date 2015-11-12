@@ -1,4 +1,4 @@
-package yamlee.com.androidexampleproject.net;
+package me.yamlee.demo.net;
 
 import android.app.Activity;
 import android.app.AlertDialog;
@@ -25,7 +25,7 @@ import javax.crypto.SecretKey;
 import javax.crypto.spec.IvParameterSpec;
 import javax.crypto.spec.SecretKeySpec;
 
-import yamlee.com.androidexampleproject.R;
+import yamlee.com.demo.R;
 
 
 public class SecureActivity extends Activity {

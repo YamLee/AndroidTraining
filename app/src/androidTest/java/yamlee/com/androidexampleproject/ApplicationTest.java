@@ -1,4 +1,4 @@
-package yamlee.com.androidexampleproject;
+package yamlee.com.demo;
 
 import android.app.Application;
 import android.test.ApplicationTestCase;

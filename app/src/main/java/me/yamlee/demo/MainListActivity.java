@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package yamlee.com.androidexampleproject;
+package me.yamlee.demo;
 
 import android.app.ListActivity;
 import android.content.Intent;

@@ -11,7 +11,7 @@ android {
     buildToolsVersion '23.0.1'
 
     defaultConfig {
-        applicationId "me.yamlee.androidexampleproject"
+        applicationId "me.yamlee.demo"
         minSdkVersion 15
         targetSdkVersion 21
         versionCode 1
@@ -21,6 +21,15 @@ android {
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+        debug{
+            minifyEnabled false
+        }
+        qaTest.initWith(buildTypes.debug)
+        qaTest {
+            applicationIdSuffix ".staging"
+            versionNameSuffix "-staging"
+            debuggable = false
         }
     }
 }

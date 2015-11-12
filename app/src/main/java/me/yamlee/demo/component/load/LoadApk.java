@@ -1,10 +1,10 @@
-package yamlee.com.androidexampleproject.component.load;
+package me.yamlee.demo.component.load;
 
 import android.app.Activity;
 import android.os.Bundle;
 
 import dalvik.system.DexFile;
-import yamlee.com.androidexampleproject.R;
+import yamlee.com.demo.R;
 
 public class LoadApk extends Activity {
 	@Override

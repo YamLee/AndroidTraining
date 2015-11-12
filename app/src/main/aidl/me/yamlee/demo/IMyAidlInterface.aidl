@@ -1,5 +1,5 @@
 // IMyAidlInterface.aidl
-package yamlee.com.androidexampleproject;
+package me.yamlee.demo;
 
 // Declare any non-default types here with import statements
 

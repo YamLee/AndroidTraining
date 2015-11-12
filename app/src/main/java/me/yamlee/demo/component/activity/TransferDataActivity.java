@@ -1,4 +1,4 @@
-package yamlee.com.androidexampleproject.component.activity;
+package me.yamlee.demo.component.activity;
 
 import android.annotation.SuppressLint;
 import android.content.ClipboardManager;
@@ -17,8 +17,8 @@ import android.widget.EditText;
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 
-import yamlee.com.androidexampleproject.BaseActivity;
-import yamlee.com.androidexampleproject.R;
+import me.yamlee.demo.BaseActivity;
+import yamlee.com.demo.R;
 
 public class TransferDataActivity extends BaseActivity {
 	
