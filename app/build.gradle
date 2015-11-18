@@ -6,6 +6,16 @@ repositories {
     maven { url 'https://maven.fabric.io/public' }
 }
 
+android.variantFilter { variant ->
+    if (variant.buildType.name.equals('release')) {
+        variant.getFlavors().each() { flavor ->
+            if (flavor.name.equals('blue')) {
+                variant.setIgnore(true);
+            }
+        }
+    }
+}
+
 android {
     compileSdkVersion 23
     buildToolsVersion '23.0.1'
@@ -25,13 +35,29 @@ android {
         debug{
             minifyEnabled false
         }
-        qaTest.initWith(buildTypes.debug)
-        qaTest {
-            applicationIdSuffix ".staging"
-            versionNameSuffix "-staging"
-            debuggable = false
+//        qaTest.initWith(buildTypes.debug)
+//        qaTest {
+//            applicationIdSuffix ".staging"
+//            versionNameSuffix "-staging"
+//            debuggable = false
+//        }
+    }
+    productFlavors{
+        flavorDimensions "color" ,"price"
+        red{
+            flavorDimension "color"
+        }
+        blue{
+            flavorDimension "color"
+        }
+        free{
+            flavorDimension "price"
+        }
+        paid{
+            flavorDimension "price"
         }
     }
+
 }
 
 dependencies {
