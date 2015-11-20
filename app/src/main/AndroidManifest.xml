@@ -81,6 +81,14 @@
                 <category android:name="com.yamlee.ANDROID_PROJECTS_CODE" />
             </intent-filter>
         </activity>
+        <activity
+            android:name="me.yamlee.demo.databinding.DataBindMainActivity"
+            android:label="@string/tite_activity_data_binding" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="com.yamlee.ANDROID_PROJECTS_CODE" />
+            </intent-filter>
+        </activity>
         <meta-data
             android:name="io.fabric.ApiKey"
             android:value="fb855d227d3fe5d73c1b57853eec82a5f03193f6" />

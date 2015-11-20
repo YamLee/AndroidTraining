@@ -14,5 +14,6 @@
     <string name="title_activity_transfer_data_in_activity">Android Demo/组件/Activity/Activity之间传递数据</string>
     <string name="title_activity_secure">Android Demo/加密/加密算法（AES，MD5，HMAC，SHA）</string>
     <string name="title_activity_retrofit">Android Demo/net/Retrofit使用</string>
+    <string name="tite_activity_data_binding">Android Demo/net/DataBinding</string>
 
 </resources>
