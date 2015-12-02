@@ -5,7 +5,7 @@
 
         <variable
             name="user"
-            type="me.yamlee.demo.entity.User"></variable>
+            type="me.yamlee.demo.entity.User"/>
     </data>
 
 
@@ -18,13 +18,15 @@
             android:layout_width="match_parent"
             android:layout_height="45dp"
             android:gravity="center"
-            android:text="@{user.userName}" />
+            android:text="@{user.userName}"
+            android:textColor="@android:color/white" />
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="45dp"
             android:gravity="center"
-            android:text="@{user.age}" />
+            android:text="@{user.userName}" />
+
 
     </LinearLayout>
 </layout>

@@ -1,10 +1,16 @@
-
+apply plugin: 'android-sdk-manager' // run before com.android.application
 apply plugin: 'com.android.application'
 apply plugin: 'io.fabric'
 
 repositories {
     maven { url 'https://maven.fabric.io/public' }
 }
+
+//sdkManager {
+//    emulatorVersion 'android-23'
+//    emulatorArchitecture 'x86' // optional, defaults to arm
+//}
+
 
 android.variantFilter { variant ->
     if (variant.buildType.name.equals('release')) {
@@ -18,15 +24,15 @@ android.variantFilter { variant ->
 
 android {
     compileSdkVersion 23
-    buildToolsVersion '23.0.1'
+    buildToolsVersion '23.0.2'
 
     dataBinding{
         enabled = true
     }
     defaultConfig {
         applicationId "me.yamlee.demo"
-        minSdkVersion 15
-        targetSdkVersion 21
+        minSdkVersion 14
+        targetSdkVersion 23
         versionCode 1
         versionName "1.0"
     }
@@ -45,23 +51,24 @@ android {
 //            debuggable = false
 //        }
     }
-    productFlavors{
-        flavorDimensions "color" ,"price"
-        red{
-            flavorDimension "color"
-        }
-        blue{
-            flavorDimension "color"
-        }
-        free{
-            flavorDimension "price"
-        }
-        paid{
-            flavorDimension "price"
-        }
-    }
+//    productFlavors{
+//        flavorDimensions "color" ,"price"
+//        red{
+//            dimension "color"
+//        }
+//        blue{
+//            dimension "color"
+//        }
+//        free{
+//            dimension "price"
+//        }
+//        paid{
+//            dimension "price"
+//        }
+//    }
 
 }
+
 
 dependencies {
     compile fileTree(include: ['*.jar'], dir: 'libs')
