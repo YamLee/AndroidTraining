@@ -32,10 +32,14 @@ android {
     defaultConfig {
         applicationId "me.yamlee.demo"
         minSdkVersion 14
-        targetSdkVersion 23
+        targetSdkVersion 21
         versionCode 1
         versionName "1.0"
     }
+    lintOptions {
+        abortOnError false
+    }
+
     buildTypes {
         release {
             minifyEnabled false
