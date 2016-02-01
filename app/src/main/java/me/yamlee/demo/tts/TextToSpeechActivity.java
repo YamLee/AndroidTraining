@@ -13,7 +13,8 @@ import android.widget.Toast;
 import java.util.HashMap;
 import java.util.Locale;
 
-import yamlee.com.demo.R;
+import me.yamlee.demo.R;
+
 
 public class TextToSpeechActivity extends Activity {
     TextToSpeech mTextToSpeech;

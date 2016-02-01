@@ -4,7 +4,7 @@ import android.app.Activity;
 import android.os.Bundle;
 
 import dalvik.system.DexFile;
-import yamlee.com.demo.R;
+import me.yamlee.demo.R;
 
 public class LoadApk extends Activity {
 	@Override

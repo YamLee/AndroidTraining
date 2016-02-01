@@ -4,7 +4,8 @@ import org.junit.runner.RunWith;
 import org.robolectric.RobolectricGradleTestRunner;
 import org.robolectric.annotation.Config;
 
-import yamlee.com.demo.BuildConfig;
+import me.yamlee.demo.BuildConfig;
+
 /**
  * Created by yamlee on 15/10/9.
  */

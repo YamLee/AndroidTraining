@@ -9,7 +9,6 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 
-import yamlee.com.demo.R;
 
 public abstract class BaseActivity extends Activity{
 	

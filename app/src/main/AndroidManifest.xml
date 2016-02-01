@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="yamlee.com.demo" >
+    package="me.yamlee.demo" >
 
     <uses-sdk
         android:minSdkVersion="11"
@@ -14,12 +14,13 @@
         android:maxSdkVersion="18" />
 
     <application
+        android:name="me.yamlee.demo.DemoApplication"
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
         <activity
-            android:name="me.yamlee.demo.component.activity.TransferDataActivity"
+            android:name=".component.activity.TransferDataActivity"
             android:label="@string/title_activity_transfer_data_in_activity" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

@@ -25,7 +25,7 @@ import javax.crypto.SecretKey;
 import javax.crypto.spec.IvParameterSpec;
 import javax.crypto.spec.SecretKeySpec;
 
-import yamlee.com.demo.R;
+import me.yamlee.demo.R;
 
 
 public class SecureActivity extends Activity {

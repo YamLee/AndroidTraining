@@ -5,7 +5,8 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 
-import yamlee.com.demo.R;
+import me.yamlee.demo.R;
+
 
 public class RetrofitActivity extends Activity {
 

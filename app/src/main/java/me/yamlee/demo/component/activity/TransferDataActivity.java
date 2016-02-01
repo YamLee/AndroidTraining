@@ -18,7 +18,7 @@ import java.io.BufferedReader;
 import java.io.InputStreamReader;
 
 import me.yamlee.demo.BaseActivity;
-import yamlee.com.demo.R;
+import me.yamlee.demo.R;
 
 public class TransferDataActivity extends BaseActivity {
 	

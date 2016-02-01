@@ -4,8 +4,8 @@ import android.databinding.DataBindingUtil;
 import android.os.Bundle;
 
 import me.yamlee.demo.BaseActivity;
+import me.yamlee.demo.R;
 import me.yamlee.demo.entity.User;
-import yamlee.com.demo.R;
 
 /**
  * Created by yamlee on 15/11/20.

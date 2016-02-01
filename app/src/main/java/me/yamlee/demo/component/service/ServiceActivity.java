@@ -12,7 +12,8 @@ import android.os.RemoteException;
 import android.util.Log;
 import android.view.View;
 
-import yamlee.com.demo.R;
+import me.yamlee.demo.R;
+
 
 public class ServiceActivity extends Activity {
 

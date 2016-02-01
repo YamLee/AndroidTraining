@@ -8,7 +8,8 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.widget.TextView;
 
-import yamlee.com.demo.R;
+import me.yamlee.demo.R;
+
 
 public class TransferDataActivityB extends Activity{
 	public static final int TRANSFER_DATA_INTENT = 0;
