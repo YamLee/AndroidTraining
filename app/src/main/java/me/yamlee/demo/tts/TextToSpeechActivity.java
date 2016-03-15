@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.os.Environment;
 import android.speech.tts.TextToSpeech;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -40,6 +41,11 @@ public class TextToSpeechActivity extends Activity {
     }
 
     public void displayToast(String msg){
+        String str = "";
+        str.length();
+        for (int j = 0; j < msg.length(); j++) {
+
+        }
         Toast.makeText(this,msg,Toast.LENGTH_SHORT).show();
     }
 
