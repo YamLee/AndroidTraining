@@ -55,6 +55,16 @@
             </intent-filter>
         </activity>
 
+        <activity
+            android:name="me.yamlee.demo.component.RecyclerViewActivity"
+            android:label="@string/recycler_view_demo" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="com.yamlee.ANDROID_PROJECTS_CODE" />
+            </intent-filter>
+        </activity>
+
         <service
             android:name="me.yamlee.demo.component.service.DemoService"
             android:enabled="true"

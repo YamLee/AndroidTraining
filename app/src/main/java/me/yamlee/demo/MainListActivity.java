@@ -26,9 +26,7 @@ import android.view.View;
 import android.widget.ListView;
 import android.widget.SimpleAdapter;
 
-import com.crashlytics.android.Crashlytics;
 
-import io.fabric.sdk.android.Fabric;
 
 import java.text.Collator;
 import java.util.ArrayList;
@@ -44,7 +42,6 @@ public class MainListActivity extends ListActivity {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        Fabric.with(this, new Crashlytics());
         Intent intent = getIntent();
         String path = intent.getStringExtra("com.example.android.apis.Path");
 

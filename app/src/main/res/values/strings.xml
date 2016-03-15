@@ -15,5 +15,6 @@
     <string name="title_activity_secure">Android Demo/加密/加密算法（AES，MD5，HMAC，SHA）</string>
     <string name="title_activity_retrofit">Android Demo/net/Retrofit使用</string>
     <string name="tite_activity_data_binding">Android Demo/net/DataBinding</string>
+    <string name="recycler_view_demo">Android Demo/组件/RecyclerViewDemo</string>
 
 </resources>
