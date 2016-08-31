@@ -1,4 +1,4 @@
-package me.yamlee.demo.component;
+package me.yamlee.demo.recyclerview;
 
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
@@ -73,6 +73,11 @@ public class RecyclerViewActivity extends BaseActivity {
         @Override
         public int getItemCount() {
             return infoModelList.size();
+        }
+
+        @Override
+        public int getItemViewType(int position) {
+            return super.getItemViewType(position);
         }
     }
 

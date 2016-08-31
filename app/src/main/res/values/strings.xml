@@ -9,12 +9,12 @@
     <string name="title_activity_service">ServiceActivity</string>
     <string name="title_root">Android Demo</string>
     <string name="title_activity_text_to_speech">TextToSpeechActivity</string>
-    <string name="tite_activity_text_to_speech">Android Demo/tts/语音合成</string>
-    <string name="title_activity_component_service">Android Demo/组件/Service</string>
-    <string name="title_activity_transfer_data_in_activity">Android Demo/组件/Activity/Activity之间传递数据</string>
-    <string name="title_activity_secure">Android Demo/加密/加密算法（AES，MD5，HMAC，SHA）</string>
-    <string name="title_activity_retrofit">Android Demo/net/Retrofit使用</string>
-    <string name="tite_activity_data_binding">Android Demo/net/DataBinding</string>
-    <string name="recycler_view_demo">Android Demo/组件/RecyclerViewDemo</string>
+    <string name="tite_activity_text_to_speech">tts/语音合成</string>
+    <string name="title_activity_component_service">component/Service</string>
+    <string name="title_activity_transfer_data_in_activity">component/Activity/Activity之间传递数据</string>
+    <string name="title_activity_secure">security/加密/加密算法（AES，MD5，HMAC，SHA）</string>
+    <string name="title_activity_retrofit">net/Retrofit使用</string>
+    <string name="tite_activity_data_binding">net/DataBinding</string>
+    <string name="recycler_view_demo">UI/support-v7/RecyclerViewDemo</string>
 
 </resources>
