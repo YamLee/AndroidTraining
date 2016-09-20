@@ -2,10 +2,6 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="me.yamlee.demo">
 
-    <uses-sdk
-        android:minSdkVersion="11"
-        android:targetSdkVersion="15" />
-
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.READ_PHONE_STATE" />
@@ -14,7 +10,7 @@
         android:maxSdkVersion="18" />
 
     <application
-        android:name="me.yamlee.demo.DemoApplication"
+        android:name=".DemoApplication"
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
@@ -29,7 +25,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="me.yamlee.demo.net.SecureActivity"
+            android:name=".net.SecureActivity"
             android:label="@string/title_activity_secure">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -37,8 +33,8 @@
                 <category android:name="com.yamlee.ANDROID_PROJECTS_CODE" />
             </intent-filter>
         </activity>
-        <activity android:name="me.yamlee.demo.component.activity.TransferDataActivityB" />
-        <activity android:name="me.yamlee.demo.MainListActivity">
+        <activity android:name=".component.activity.TransferDataActivityB" />
+        <activity android:name=".MainListActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -46,7 +42,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="me.yamlee.demo.component.service.ServiceActivity"
+            android:name=".component.service.ServiceActivity"
             android:label="@string/title_activity_component_service">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -66,7 +62,7 @@
         </activity>
 
         <service
-            android:name="me.yamlee.demo.component.service.DemoService"
+            android:name=".component.service.DemoService"
             android:enabled="true"
             android:exported="true">
             <intent-filter>
@@ -75,7 +71,7 @@
         </service>
 
         <activity
-            android:name="me.yamlee.demo.tts.TextToSpeechActivity"
+            android:name=".tts.TextToSpeechActivity"
             android:label="@string/tite_activity_text_to_speech">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -84,7 +80,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="me.yamlee.demo.net.retrofit.RetrofitActivity"
+            android:name=".net.retrofit.RetrofitActivity"
             android:label="@string/title_activity_retrofit">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -93,7 +89,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="me.yamlee.demo.databinding.DataBindMainActivity"
+            android:name=".databinding.DataBindMainActivity"
             android:label="@string/tite_activity_data_binding">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
