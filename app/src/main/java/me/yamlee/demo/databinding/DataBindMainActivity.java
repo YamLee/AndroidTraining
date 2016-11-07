@@ -1,12 +1,11 @@
 package me.yamlee.demo.databinding;
 
-import android.databinding.BindingMethod;
-import android.databinding.BindingMethods;
 import android.databinding.DataBindingUtil;
 import android.os.Bundle;
 
 import me.yamlee.demo.BaseActivity;
 import me.yamlee.demo.R;
+import me.yamlee.demo.entity.Job;
 import me.yamlee.demo.entity.User;
 
 /**
@@ -24,9 +23,12 @@ public class DataBindMainActivity extends BaseActivity {
         User user = new User();
         user.userName.set("LiYan");
         user.age = "20";
+
+        Job job = new Job();
         BindingPresenter bindingPresenter = null;
 //        bindingPresenter = new BindingPresenter();
         binding.setUser(user);
+        binding.setJob(job);
         binding.setPresenter(bindingPresenter);
     }
 }

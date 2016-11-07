@@ -10,6 +10,10 @@
             type="me.yamlee.demo.entity.User" />
 
         <variable
+            name="job"
+            type="me.yamlee.demo.entity.Job" />
+
+        <variable
             name="presenter"
             type="me.yamlee.demo.databinding.BindingPresenter" />
     </data>
@@ -30,11 +34,19 @@
             tools:text="test" />
 
         <TextView
+            android:id="@+id/textView"
             android:layout_width="match_parent"
             android:layout_height="45dp"
             android:gravity="center"
             android:text="@{user.age}"
             tools:text="23" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:gravity="center"
+            android:text="@{job.jobName}"
+            tools:text="job name" />
 
         <EditText
             android:layout_width="match_parent"
