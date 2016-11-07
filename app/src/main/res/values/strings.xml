@@ -16,5 +16,6 @@
     <string name="title_activity_retrofit">net/Retrofit使用</string>
     <string name="tite_activity_data_binding">net/DataBinding</string>
     <string name="recycler_view_demo">UI/support-v7/RecyclerViewDemo</string>
+    <string name="title_memory">性能/内存溢出</string>
 
 </resources>

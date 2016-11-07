@@ -96,6 +96,14 @@
                 <category android:name="com.yamlee.ANDROID_PROJECTS_CODE" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".performance.MemoryActivity"
+            android:label="@string/title_memory">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="com.yamlee.ANDROID_PROJECTS_CODE" />
+            </intent-filter>
+        </activity>
 
         <meta-data
             android:name="io.fabric.ApiKey"

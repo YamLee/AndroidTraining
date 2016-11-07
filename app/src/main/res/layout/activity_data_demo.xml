@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="user"
+            type="me.yamlee.demo.entity.User" />
+
+        <variable
+            name="presenter"
+            type="me.yamlee.demo.databinding.BindingPresenter" />
+    </data>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:gravity="center"
+            android:onClick="@{(view) -> presenter.clickUserName(view)}"
+            android:text="@{user.userName}"
+            android:textColor="@android:color/holo_red_light"
+            tools:text="test" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:gravity="center"
+            android:text="@{user.age}"
+            tools:text="23" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@={user.userName}"
+            app:selection="@{user.userNameLength}" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:onClick="@{() -> presenter.clickInSubElement()}"
+                android:text="sub element click" />
+        </LinearLayout>
+
+        <include
+            layout="@layout/test_layout"
+            android:onClick="@{() -> resenter.clickInSubElement()}" />
+
+    </LinearLayout>
+</layout>
