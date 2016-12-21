@@ -81,8 +81,7 @@ public class DemoService extends Service {
     @Override
     public int onStartCommand(Intent intent, int flags, int startId) {
         Log.i(TAG, "DemoService onStartCommand");
-        return super.onStartCommand(intent, flags, startId);
-
+        return Service.START_STICKY;
     }
 
     @Override

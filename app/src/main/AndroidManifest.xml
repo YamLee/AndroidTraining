@@ -70,6 +70,20 @@
             </intent-filter>
         </service>
 
+        <receiver android:name=".component.receiver.DemoReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+                <action android:name="android.intent.action.USER_PRESENT" />
+                <action android:name="com.igexin.sdk.action.refreshls" />
+                <!-- 以下三项为可选的action声明，可大大提高service存活率和消息到达速度 -->
+                <action android:name="android.intent.action.MEDIA_MOUNTED" />
+                <action android:name="android.intent.action.ACTION_POWER_CONNECTED" />
+                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED" />
+                <action android:name="android.intent.action.UID_REMOVED" />
+            </intent-filter>
+        </receiver>
+
         <activity
             android:name=".tts.TextToSpeechActivity"
             android:label="@string/tite_activity_text_to_speech">

@@ -18,6 +18,7 @@ import me.yamlee.demo.R;
 public class ServiceActivity extends Activity {
 
     private static final String TAG = "Service_Activity";
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -32,23 +33,28 @@ public class ServiceActivity extends Activity {
     public void bindService_binder(View view) {
         Log.i(TAG, "bindservice btn onclicked!");
         Intent intet = new Intent(this, DemoService.class);
-        intet.putExtra(DemoService.BINDER_COMMUNICATE_WAY_KEY,DemoService.BINDER_COMMUNICATE_WAY_VALUE);
+        intet.putExtra(DemoService.BINDER_COMMUNICATE_WAY_KEY, DemoService.BINDER_COMMUNICATE_WAY_VALUE);
         bindService(intet, new BinderServiceConnection(), BIND_AUTO_CREATE);
     }
 
     public void bindService_messenger(View view) {
-        Log.i(TAG,"bindservice_messenger clicked");
+        Log.i(TAG, "bindservice_messenger clicked");
         Intent intet = new Intent(this, DemoService.class);
-        intet.putExtra(DemoService.MESSENGER_COMMUNICATE_WAY_KEY,DemoService.MESSENGER_COMMUNICATE_WAY_VALUE);
+        intet.putExtra(DemoService.MESSENGER_COMMUNICATE_WAY_KEY, DemoService.MESSENGER_COMMUNICATE_WAY_VALUE);
         bindService(intet, new MessengerServiceConnection(), BIND_AUTO_CREATE);
     }
 
-    class MessengerServiceConnection implements ServiceConnection{
+    public void onClickStartService(View view) {
+        Intent intent = new Intent(this, DemoService.class);
+        startService(intent);
+    }
+
+    class MessengerServiceConnection implements ServiceConnection {
 
         @Override
         public void onServiceConnected(ComponentName name, IBinder service) {
             Messenger messenger = new Messenger(service);
-            Message msg = Message.obtain(null,DemoService.MSG_WHAT_SAY_HELLO);
+            Message msg = Message.obtain(null, DemoService.MSG_WHAT_SAY_HELLO);
             try {
                 messenger.send(msg);
             } catch (RemoteException e) {
